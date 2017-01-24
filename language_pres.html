@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Language Presentation</title>
+	<style type="text/css">
+		div {
+			display: block;
+			height: 56px;
+			width: 96%;
+			font-family: sans-serif;
+			color: black;
+			padding-bottom: 6px;
+			border: 1px solid orange;
+			border-radius: 12px;
+			background: linear-gradient(green, yellow);
+			margin-left: 12px;
+			margin-right: 12px;
+			margin-bottom: 24px;
+			box-shadow: 2px 2px 2px 2px gray;
+		}
+		#main-box{
+			height: 100%;
+			padding:6px;
+		}
+		body {
+			background-color: orange;
+		}
+		img {
+			margin: 6px 24px 6px 64px;
+			height: 156px;
+			width: 212px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- intro block -->
+
+	<div>
+	<h1 style="font-size: 32px;">LISP - programming language</h1>
+	</div>
+
+	<img src="http://history-computer.com/ModernComputer/Software/images/McCarthy.jpg"></span>
+	<img src="http://images.computerhistory.org/timeline/timeline_ai.robotics_1968.shrdlu.jpg">
+	<img src="http://www.unlambda.com/cadr/cadr_top_small.jpg">
+	<img src="https://d6vfwwsmhxo8w.cloudfront.net/previews/2316_0000_56338da9585ea_640x360.jpg">
+
+	<div id="main-box">
+		<h3>Origin</h3>
+		<p>LISP was specified in 1958 by John McCarthy at MIT, making it the second oldest programming language still used. It's name comes from the term "List Processor", used because linked lists are the main data structure in LISP.</p>
+		<h3>Uses</h3>
+		<p>LISP is closely tied with early exploration into AI or artificial intelligence systems, and was used to write the programming language of SHRDLU, one of the most successful "interactive fiction" AI of the time.</p>
+		<h3>Pioneering ideas</h3>
+		<p>As one of the earlist languages, LISP was a trailblazer. Many of the fundamentals of computer science today, such as tree-style data structures, conditionals (i.e. booleans), higher order functions (functions with functions as arguments), and recursion got their start in LISP.</p>
+		<h3>Syntax and example</h3>
+		<p>LISP is known by it's parentheses heavy syntax. All programs, code, and data are written as "s-expressions", unlike in other languages which make regular use of brackets and braces. This has given LISP nicknames like "Lost in stupid parentheses", although this regularity also gives LISP much of it's power. Below is a function in LISP that finds the factorial of a number. (the product of all positive integers less than or equal to a given number)</p>
+		<code>(defun factorial (n)
+   (if (= n 0) 1
+       (* n (factorial (- n 1)))))</code>
+	</div>
+</body>
+</html>
